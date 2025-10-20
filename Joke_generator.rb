@@ -1,33 +1,3 @@
-def Menu
-  loop do
-    puts "1. Devil"
-    puts "2. Men"
-    puts "3. Cowboy"
-    puts "4. Magic"
-    puts "5. Music Recommendation"
-    puts "6. Exit"
-    puts "Enter Selection:"
-    selection = gets.chomp.to_i
-
-    if selection == 1
-      devil_went_down_to_Georgia
-    elsif selection == 2
-      men_die
-    elsif selection == 3
-      cowboys_riding
-    elsif selection == 4
-      magic
-    elsif selection == 5
-      music_recommendation   
-    elsif selection == 6
-      puts "Take care and come back for more."
-      break 
-    else  
-      puts "Invalid selection"
-    end
-  end      
-end
-
 def clear_screen
   system("clear") || system ("cls")
 end    
@@ -126,5 +96,35 @@ def music_recommendation
   clear_screen
 end  
 
+def Menu
+  loop do
+    puts "1. Devil"
+    puts "2. Men"
+    puts "3. Cowboy"
+    puts "4. Magic"
+    puts "5. Music Recommendation"
+    puts "6. Exit"
+    puts "Enter Selection:"
+    selection = gets.chomp.to_i
 
+    if selection == 1
+      devil_went_down_to_Georgia
+    elsif selection == 2
+      men_die
+    elsif selection == 3
+      cowboys_riding
+    elsif selection == 4
+      magic
+    elsif selection == 5
+      music_recommendation   
+    elsif selection == 6
+      puts "Take care and come back for more."
+      break 
+    else  
+      puts "Invalid selection"
+    end
+  end      
+end
+
+menu
 
