@@ -96,7 +96,7 @@ def music_recommendation
   clear_screen
 end  
 
-def Menu
+def menu
   loop do
     puts "1. Devil"
     puts "2. Men"
